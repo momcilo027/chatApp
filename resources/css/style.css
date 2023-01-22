@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    --primaryColor: #E18814;
+    --lightGray: #3d3d3d;
+    --darkGray: #2D2D2D;
+  }
+  body{
+    background: var(--lightGray);
+  }
+  .navbar{
+    background: var(--primaryColor);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+  }
+  .logo ul{
+    display: flex;
+    list-style: none;
+  }
+  .logo a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  .logo a:hover{
+    color: white;
+    cursor: pointer;
+  }
+  .links ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .links a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    padding: .5rem 1rem;
+    border: 2px solid var(--primaryColor);
+  }
+  .links a:hover{
+    border: 2px solid black;
+    cursor: pointer;
+  }
+  .formStyle{
+    margin-top: 3rem;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--darkGray);
+    margin-bottom: 3rem;
+  }
+  .formHead{
+    padding: 2rem 0 0 0;
+    text-align: center;
+  }
+  .formHead h1{
+    color: white;
+    font-size: 2rem;
+  }
+  .formPick{
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+  }
+  .inActive{
+    background: rgba(0, 0, 0, 0.15);
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .active{
+    font-weight: bold;
+    background: var(--primaryColor);
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+  }
+  .form{
+  }
+  .inputStyle{
+    padding-bottom: 1rem;
+  }
+  .inputStyle label{
+    font-size: 1.5rem;
+    padding-left: 2.5rem;
+  }
+  .inputStyle input{
+    border: none;
+    outline: none;
+    background: var(--lightGray);
+    color: white;
+    width: 740px;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .inputStyle input:active{
+    background: var(--darkGray);
+  }
+  .inputStyle strong{
+    color: var(--primaryColor);
+    font-size: 1.1rem;
+    padding-left: 2.5rem;
+  }
+  .buttonStyle{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .buttonStyle button{
+    width: 740px;
+    background: none;
+    color: var(--primaryColor);
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+  }
+  .buttonStyle button:hover{
+    background: rgba(255, 255, 255, 0.2);
+    color: black;
+    cursor: pointer;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    left: 13%;
+    background: var(--darkGray);
+    height: 100%;
+    position: absolute;
+  }
+  .users{
+    padding: 1rem 0;
+    width: 300px;
+  }
+  .users h1{
+    text-align: center;
+    padding: 1rem 0;
+    color: white;
+  }
+  .users ul{
+    list-style: none;
+  }
+  .users li{
+    margin-bottom: .5rem;
+  }
+  .users button{
+    font-size: 1.2rem;
+    padding: .6rem;
+    width: 100%;
+    background: none;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+  .users button:hover{
+    background: var(--primaryColor);
+    color: black;
+    cursor: pointer;
+  }
+  .msgs{
+    width: 900px;
+    background: #2b2b2b;
+  }
+  .info{
+    padding: 2rem 0;
+    text-align: center;
+    color: white;
+  }
+  .info input{
+    font-size: 1.5rem;
+    text-align: end;
+    background: var(--lightGray);
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+    margin-top: 1.5rem;
+    width: 700px;
+  }
+  ::placeholder{
+    color: white;
+    text-align: center;
+  }
+  .showMsgs{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sent{
+    text-align: right;
+  }
+  .sent strong{
+    border-top-left-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+    padding: 0 1rem 0.1rem 1rem;
+    font-size: 1.5rem;
+    background: var(--primaryColor);
+    margin: 0;
+  }
+  .recived{
+    text-align: left;
+  }
+  .recived strong{
+    border-top-right-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    padding: 0 1rem 0.1rem 1rem;
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 0;
+    color: white;
+  }
+  .deleteAcc{
+    display: flex;
+    justify-content: center;
+  }
+  .deleteAcc button{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    width: 500px;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--primaryColor);
+  }
+  .deleteAcc button:hover{
+    background: var(--primaryColor);
+    color: black;
+    cursor: pointer;
+  }
+  
